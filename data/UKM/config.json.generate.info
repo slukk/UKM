@@ -61,7 +61,7 @@ cat << CTAG
 					en:"ROM Description",
 					es:"Descripción del ROM"
 				},
-				description:"`getprop ro.build.host | $BB awk '{print toupper($0)}'`"
+				description:"`getprop ro.build.id | $BB awk '{print toupper($0)}'`"
 			}},
 			{ SPane:{
 				title:{
@@ -72,7 +72,7 @@ cat << CTAG
 					if [ -n $MODVER ]; then 
 						$BB echo $MODVER;
 					else 
-						$BB echo \`getprop ro.build.version.incremental\`;
+						$BB echo \`getprop ro.product.brand\`;
 					fi;`"
 			}},
 			{ SPane:{
