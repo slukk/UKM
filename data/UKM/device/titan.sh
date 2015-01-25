@@ -72,7 +72,7 @@ case "$1" in
 		$BB echo "/sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/min_freq";
 	;;
 	#DirGPUNumPwrLevels)
-	#	$BB echo "/sys/class/kgsl/kgsl-3d0/num_pwrlevels";
+		$BB echo "/sys/class/kgsl/kgsl-3d0/num_pwrlevels";
 	#;;
 	#DirGPUPolicy)
 	#	$BB echo "/sys/class/kgsl/kgsl-3d0/pwrscale/policy"; 
