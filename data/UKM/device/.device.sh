@@ -31,6 +31,8 @@ case $DEVICE in
 		CONFIG="deb";; #Nexus 7 2012
 	honami|C6943|C690?|falcon*|peregrine*|sirius|D65??)
 		CONFIG="bacon";; #honami|C6943|C690x = Sony Xperia Z1, falcon* = Moto G 2013, #peregrine* = Moto G 4G 2013, sirius|D65xx = Sony Xperia Z2
+            titan*)
+                      CONFIG="titan";; # Moto G 2014
 	*)
 		CONFIG="";; #Not defined
 esac;
